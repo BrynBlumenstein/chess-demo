@@ -3,11 +3,12 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 40px;
     height: 100vh;
     margin: 0;
     font-family: monospace;
     font-size: 20px;
-    background-color: #3e413a;
+    background-color: #2d3029;
 }
 
 #boards-container {
@@ -24,8 +25,11 @@ body {
 }
 
 .text {
-    background-color: #ececd3;
-    padding: 10px;
+    color: #edeed1;
+}
+
+#display {
+    font-size: 30px;
 }
 
 .board {
@@ -35,7 +39,7 @@ body {
     height: 500px;
 }
 
-.board, .text {
+.board {
     border: 5px solid black;
     border-radius: 5px;
 }
@@ -52,9 +56,17 @@ body {
 }
 
 .light {
-    background-color: #ececd3;
+    background-color: #edeed1;
 }
 
 .dark {
-    background-color: #768a5a;
+    background-color: #779952;
+}
+
+.selected.light, .highlighted.light {
+    background-color: #ebee89;
+}
+
+.selected.dark, .highlighted.dark {
+    background-color: #b4ca48;
 }
